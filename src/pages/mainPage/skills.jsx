@@ -3,7 +3,7 @@ import React from 'react'
 const Skills = () => {
   return (
     <div id='skills' className='slide'>
-      <h2 id='skills-heading'>Skills</h2>
+      <h1 id='skills-heading'>Skills</h1>
       <div id='skills-list'>
         <ul>
           <li>JavaScript</li>

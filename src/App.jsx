@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
+    {/* do routing if adding multiple pages */}
       <Navbar />
       {/* <div id='navbar-spacer' /> */}
-      {/* do routing if adding multiple pages */}
       <MainPage />
     </>
   )

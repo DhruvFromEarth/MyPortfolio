@@ -3,23 +3,46 @@
   line-height: 1.5;
   font-weight: 400;
   
+  --bgColor: rgb(255, 255, 255);
   --bgColor: rgb(190, 100, 100);
-  --bgColor: rgb(190, 100, 100);
-  --navbarColor: rgba(0, 0, 0, 0.1);
   --textColor: #fff;
+  --headingFontSize: 2rem;
 
-
+  --navbarColor: rgba(0, 0, 0, 0.1);
+  --navbarLinkColor: #fff;
   --navbarHeight: 50px;
   --navbarWidth: 80%;
   --navbarTopSpacing: 10px;
   --navbarPadding: 20px;
-  --navbarLinkColor: #fff;
 
+  --aboutTextImageGap: 20px;
+  --aboutImageWidth: 300px;
+
+  --skillsHeadingFontSize: var(--headingFontSize);
+  --skillsHorizontalGap: 20%;
+  --skillsVerticalGap: 60%;
+  --skillsListWidth: 80%;
+  --skillsListHeight: 80%;
+
+  --projectsHeadingFontSize: var(--headingFontSize);
+  --projectsListWidth: 80%;
+  --projectsListHeight: 80%;
+  --projectsVerticalGap: 60%;
+
+  --contactListVerticalGap: 10px;
+  --contactHeadingListGap: 10px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* testing */
+  --1: red;
+  --2: green;
+  --3: blue;
+  --4: blueviolet;
+  --5: orange;
 }
 
 * {
