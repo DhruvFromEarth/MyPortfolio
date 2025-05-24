@@ -4,25 +4,36 @@
   font-weight: 400;
   
   --bgColor: rgb(255, 255, 255);
-  --bgColor: rgb(190, 100, 100);
+  --bgColor: rgba(206, 146, 178, 0.777);
+  --bgColor: rgba(183, 174, 165, 0.5);
   --textColor: #fff;
   --headingFontSize: 2rem;
+  --slideHeight: 100vh;
+  --slidesPadding: 10%;
 
-  --navbarColor: rgba(0, 0, 0, 0.1);
-  --navbarLinkColor: #fff;
-  --navbarHeight: 50px;
+  --navbarColor: rgba(0, 0, 0, 0.3);
+  --navbarColor: rgb(96, 22, 49);
+  --navbarColor: rgba(96, 22, 49, 0.8);
+  --navbarTextColor: var(--textColor);
+  --navbarTextSize: 1.2rem;
+  --navbarHeight: 7%;
   --navbarWidth: 80%;
   --navbarTopSpacing: 10px;
   --navbarPadding: 20px;
+  --navbarBorderRadius: 0.7rem;
 
   --aboutTextImageGap: 20px;
   --aboutImageWidth: 300px;
+  --aboutTextMaxWidth: 50%;
 
   --skillsHeadingFontSize: var(--headingFontSize);
-  --skillsHorizontalGap: 20%;
-  --skillsVerticalGap: 60%;
-  --skillsListWidth: 80%;
-  --skillsListHeight: 80%;
+  --skillsHeadingListGap: 20px;
+  /* --skillsListWidth: 80%;
+  --skillsListHeight: 80%; */
+  --skillsVerticalGap: 20px;
+  /* --skillsHorizontalGap: 20px; */
+  --skillsBoxBorderColor: black;
+  --skillsBoxBorderRadius: 10px;
 
   --projectsHeadingFontSize: var(--headingFontSize);
   --projectsListWidth: 80%;
@@ -31,6 +42,7 @@
 
   --contactListVerticalGap: 10px;
   --contactHeadingListGap: 10px;
+  --contactLinkColor: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,11 +50,11 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* testing */
-  --1: red;
+  /* --1: red;
   --2: green;
   --3: blue;
   --4: blueviolet;
-  --5: orange;
+  --5: orange; */
 }
 
 * {

@@ -12,6 +12,7 @@
     width: var(--navbarWidth);
     z-index: 10;
     padding-inline: var(--navbarPadding);
+    border-radius: var(--navbarBorderRadius);
 }
 
 #navbar-links ul{
@@ -23,8 +24,15 @@
     list-style: none;
 }
 
+#navbar-name{
+    font-size: var(--navbarTextSize);
+    color: var(--navbarTextColor);
+
+}
+
 #navbar-links ul li a {
-    color: var(--navbarLinkColor);
+    font-size: var(--navbarTextSize);
+    color: var(--navbarTextColor);
     text-decoration: none;
 
 }

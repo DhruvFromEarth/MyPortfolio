@@ -1,3 +1,10 @@
 body{
     background-color: var(--bgColor);
 }
+
+#bg-image{
+    position: fixed;
+    top: -800px;
+    right: 0;
+    z-index: -1;
+}

@@ -4,15 +4,13 @@ const About = () => {
   return (
     <div id='about' className='slide'>
       <div id='about-text'>
-        <h1>Welcome to the Main Page</h1>
-        <h3>Welcome to the Main Page</h3>
-        <p>This is the introduction section of the main page.</p>
-        <p>Here you can find various information and links to other sections.</p>
-        <p>Feel free to explore!</p>
+        <h1>Web Developer</h1>
+        <p>A detail-oriented MERN Stack (MongoDB, Express, React, Node.js) Web Developer with a curious and imaginative mindset, seeking to leverage expertise in front-end and back-end development to create dynamic and user-friendly web applications.</p>
       </div>
 
       <div id='about-image'>
-        <img src='./jiji_the_cat.jpg' alt='Intro Image' />
+        <img src='./picture0.png' alt='Intro Image' />
+        {/* <div className='fadeOverlay'></div> */}
       </div>
     </div>
   )

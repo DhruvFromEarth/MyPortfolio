@@ -7,6 +7,7 @@ function App() {
   return (
     <>
     {/* do routing if adding multiple pages */}
+      <img src="./red-swirl.png" alt="" id="bg-image" />
       <Navbar />
       {/* <div id='navbar-spacer' /> */}
       <MainPage />
