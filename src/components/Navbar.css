@@ -1,0 +1,30 @@
+#navbar{
+    background-color: var(--navbarColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: var(--navbarTopSpacing);
+    left: 50%;
+    transform: translateX(-50%);
+    height: var(--navbarHeight);
+    width: var(--navbarWidth);
+    z-index: 10;
+    padding-inline: var(--navbarPadding);
+}
+
+#navbar-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#navbar-links ul li a {
+    color: var(--navbarLinkColor);
+    text-decoration: none;
+
+}
