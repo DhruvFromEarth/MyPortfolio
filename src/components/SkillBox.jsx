@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SkillBox = ({ skill }) => {
   return (
     <div id='skill-box'>

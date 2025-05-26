@@ -1,5 +1,5 @@
 .slide{
-    height: var(--slideHeight);
+    height: var(--slidesHeight);
     width: 80vw;
     background-color: var(--4);
     display: flex;
@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: flex-start;
     height: fit-content;
-    padding-top: 10vh;
+
 }
 
 #skills-heading{
@@ -90,7 +90,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* gap: var(--skillsHorizontalGap); */
 }
 
 #skills-list ul li{
@@ -119,7 +118,7 @@
 .skill-icon {
     min-width: 50px;
     width: 100px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
 }
 
 /* projects slide */
@@ -127,7 +126,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    height: fit-content;
 }
 
 #projects-heading{
@@ -140,13 +140,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: var(--projectsListWidth);
-    height: var(--projectsListHeight);
+    margin-top: var(--projectsVerticalGap);
 }
 
-#projects-list ul li{
-    margin-bottom: var(--projectsVerticalGap);
+/* ProjectBox Component */
+#project-box {
+    display: flex;
+    border: 1px solid var(--projectsBoxBorderColor);
+    border-radius: var(--projectsBoxBorderRadius);
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    flex-direction: column;
 }
 
 /* contact slide */
@@ -172,7 +179,10 @@
     list-style: none;
 }
 
-#contact ul li a{
+#contact a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-decoration: none;
     color: var(--contactLinkColor);
     text-align: center;
@@ -192,22 +202,24 @@
 
 @media (max-width: 545px) {
     .slide{
-        flex-direction: column;
+        padding: calc(2* var(--slidesPadding)) 0 var(--slidesPadding) 0;
     }
+    
+    #about {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: flex-start;
+    }
+
+    #about-text{
+        margin: 0;
+        max-width: fit-content;
+    }
+}
+
+@media (max-width: 410px) {
     #skills-list ul li {
         flex: 1 1 100%;
         max-width: 100%;
     }
-    #about {
-        padding: 0%;
-        height: fit-content;
-        justify-content: flex-start;
-    }
-    #about-text{
-        margin: 0;
-    }
-}
-
-@media (max-width: 545px) {
-
 }

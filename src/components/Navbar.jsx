@@ -1,21 +1,50 @@
-import React from 'react'
+import { useState } from 'react'
 import './Navbar.css'
 
-export const Navbar = () => {
+
+const NavbarLinks = ({ setShowList }) => {
+
+  const handleLinkClick = () => {
+    const menuPage = document.getElementById('menu-page');
+    menuPage.classList.remove('active');
+    setShowList(false);
+  }
+
+  return <ul>
+    <li onClick={handleLinkClick}><a href='#intro'>Home</a></li>
+    <li onClick={handleLinkClick}><a href='#about'>About</a></li>
+    <li onClick={handleLinkClick}><a href='#skills'>Skills</a></li>
+    <li onClick={handleLinkClick}><a href='#projects'>Projects</a></li>
+    <li onClick={handleLinkClick}><a href='#contact'>Contact</a></li>
+  </ul>
+}
+const MenuPage = ({ isActive , setShowList }) => {
   return (
-    <div id='navbar'>
+    <div id='menu-page' className={isActive ? 'active' : ''}>
+      <NavbarLinks setShowList={setShowList} />
+    </div>
+  )
+}
+
+export const Navbar = () => {
+  const [showList, setShowList] = useState(false);
+
+  return (
+    <>
+      <div id='navbar'>
         <div id='navbar-name'>
-            PORTFOLIO
+          PORTFOLIO
         </div>
         <div id='navbar-links'>
-            <ul>
-                <li><a href='#intro'>Home</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#skills'>Skills</a></li>
-                <li><a href='#projects'>Projects</a></li>
-                <li><a href='#contact'>Contact</a></li>
-            </ul>
+          <NavbarLinks setShowList={setShowList}/>
         </div>
-    </div>
+        <div id='navbar-toggle'>
+          <div id='navbar-toggle-icon' onClick={() => setShowList(!showList)}>
+            {showList ? '✖' : '☰'}
+          </div>
+        </div>
+      </div>
+      <MenuPage isActive={showList} setShowList={setShowList} />
+    </>
   )
 }

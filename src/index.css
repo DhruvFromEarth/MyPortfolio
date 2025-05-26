@@ -6,9 +6,10 @@
   --bgColor: rgb(255, 255, 255);
   --bgColor: rgba(206, 146, 178, 0.777);
   --bgColor: rgba(183, 174, 165, 0.5);
+  --bgColor: rgb(214, 208, 202);
   --textColor: #fff;
   --headingFontSize: 2rem;
-  --slideHeight: 100vh;
+  --slidesHeight: 100vh;
   --slidesPadding: 10%;
 
   --navbarColor: rgba(0, 0, 0, 0.3);
@@ -28,17 +29,16 @@
 
   --skillsHeadingFontSize: var(--headingFontSize);
   --skillsHeadingListGap: 20px;
-  /* --skillsListWidth: 80%;
-  --skillsListHeight: 80%; */
   --skillsVerticalGap: 20px;
-  /* --skillsHorizontalGap: 20px; */
   --skillsBoxBorderColor: black;
   --skillsBoxBorderRadius: 10px;
 
   --projectsHeadingFontSize: var(--headingFontSize);
-  --projectsListWidth: 80%;
-  --projectsListHeight: 80%;
-  --projectsVerticalGap: 60%;
+  --projectsListWidth: 100%;
+  --projectsListHeight: 100%;
+  --projectsVerticalGap: 20px;
+  --projectsBoxBorderColor: black;
+  --projectsBoxBorderRadius: 10px;
 
   --contactListVerticalGap: 10px;
   --contactHeadingListGap: 10px;
@@ -67,58 +67,3 @@
 #navbar-spacer{
   height: calc(var(--navbarHeight) + var(--navbarTopSpacing));
 }
-
-/*
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
