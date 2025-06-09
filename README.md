@@ -30,8 +30,8 @@ This is a responsive, modern portfolio website built to highlight:
 
 I'm always open to new opportunities, collaborations, or just a friendly chat about web development and technology.
 
-- **Email:** [your.email@example.com](mailto:dhruvjaindj888@gmail.com)  
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/dhruvjaindj888/)
+- **Email:** [dhruvjaindj888@gmail.com](mailto:dhruvjaindj888@gmail.com)  
+- **LinkedIn:** [dhruvjaindj888](https://www.linkedin.com/in/dhruvjaindj888/)
 
 Feel free to reach out — I'd love to connect!
 
